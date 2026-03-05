@@ -1,0 +1,35 @@
+# ===== FILE CONTENT (what we wrote) =====
+Get-Content notes.txt        # show file content
+cat notes.txt                # same (alias)
+Get-Content README.md        # show README content
+cat README.md
+
+# ===== BASIC GIT CHECKS =====
+git status                   # what changed / what's staged / current branch
+git branch                   # list local branches
+git branch -vv               # show upstream (tracking) info
+git remote -v                # show remote URLs (origin)
+
+# ===== SEE CHANGES =====
+git diff                     # unstaged changes
+git diff --staged            # staged changes
+
+# ===== STAGE / COMMIT / PUSH =====
+git add notes.txt            # stage a file
+git add README.md
+git add .                    # stage all changes in current folder
+
+git commit -m "Message"      # create a commit
+
+git push                     # push current branch (if upstream is set)
+git push -u origin feature-2 # first push + set upstream
+
+# ===== BRANCHING =====
+git switch main              # switch to main
+git switch -c feature-2      # create + switch to feature-2
+# alternative:
+git checkout -b feature-2
+
+# ===== UPDATE FROM REMOTE =====
+git fetch                    # download remote updates (no merge)
+git pull                     # fetch + merge/rebase into current branch
