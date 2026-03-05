@@ -15,3 +15,6 @@ This repository is for practicing basic Git workflows.
 ## Notes: fetch vs pull
 - `git fetch` downloads changes from the remote repository but does **not** update your current local branch.
 - `git pull` downloads changes **and** integrates them into your current local branch (usually fetch + merge, or fetch + rebase depending on config).
+
+## Feature 1
+This section was added in the feature-1 branch.
